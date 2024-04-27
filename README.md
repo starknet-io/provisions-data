@@ -38,7 +38,7 @@ The function `sendMessageToL2` needs to be called with appropriate `msg.value` (
 
 The latter three parameters are as follows:
 
-1. **toAddress**: `0x071808540ed1139bcc8bb55eb975e8168758f2a342ce3f22c512a1c8da1b84dc`
+1. **toAddress**: `0x026942155437167f8a18c2602637e30d636f0ce7a88d5ed465f8d1f08f1ea015`
 2. **selector**: `0x00828430c65c40cba334d4723a4c5c02a62f612d73d564a1c7dc146f1d0053f9`
 3. **payload**: [`eth_address`, `balance`, `0`, `index`, `len_merkle_path`, `merkle_path`, `starknet_address`], where
     1. `eth_address`: your eth address.
