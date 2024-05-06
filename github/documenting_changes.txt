@@ -1,0 +1,25 @@
+Background:
+The issue involves 1796 GitHub usernames identified as squatted. These usernames were originally eligible for provisions but were taken over by individuals who allegedly did not make qualifying contributions, thus being deemed ineligible for inclusion in the Provisions program.
+
+Data Sources and Their Complementation:
+    Logs from when the eligible usernames were initially obtained: Contained emails of eligible users, crucial for tracking original account holders.
+    Database by Banteg: This database helps identify new usernames by cross-referencing the logs data. 
+
+Both sources complement each other, enhancing our ability to identify more changed usernames than would be possible with either source alone. We thank Banteg on this. Explanation of the Procedure for Identifying New Usernames for Squatted Accounts:
+
+Initial Data Collection:
+
+Some users had set their email to private, showing addresses like 45264458+abdelhamidbakhta@users.noreply.github.com. From here, we matched old usernames with a GitHub ID, such as 45264458. This allowed us to uniquely reassign the provisions amount to the new GitHub username for this specific ID. It’s important to note that several GitHub accounts were completely deleted, meaning no new usernames could be assigned.
+
+Further Data Collection by Banteg:
+
+Banteg utilized the GH Archive dataset, which indexes all public events on GitHub from 2018 to 2023. He ran a query looking up usernames. This approach misses some accounts due to them being renamed before 2018 or had no public activity between 2018 and 2023. He also queried the GitHub API to look up IDs, up-to-date names by ID, and deleted accounts (more details in this comment by banteg).
+
+Challenges and Limitations:
+
+    Due to privacy reasons, GitHub does not provide a direct method to obtain new usernames from old ones without the unique GitHub ID, which remains constant despite username changes. Unfortunately, the GitHub IDs for the awarded individuals were not originally obtained, necessitating the methods described above.
+    Admittedly, despite our comprehensive methods, we will likely miss some of the changed usernames due to the inherent limitations of the data sources and methods used.
+
+Conclusion:
+We started the process with a list of 1796 squatted usernames. Of the eligible accounts, 866 were renamed, and for 930 accounts, no new username was found, possibly due to account deletion, inactivity during 2018-2023 period, or changing their username before 2018.
+Both data sources were essential (Starkware’s + Banteg’s), as neither alone could capture sufficient information about the users involved. This coordinated approach ensured that provisions could be correctly reassigned wherever possible.
